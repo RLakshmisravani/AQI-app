@@ -51,6 +51,10 @@ const ForecastPage = () => {
     <div className="forecast-container">
       <div className="forecast-box">
         <h2 className="forecast-title">AQI Forecast</h2>
+       <h3 style={{ textAlign: "center", color: "grey" }}>Note: This prototype supports AQI forecasting only for June 2025 data</h3>
+
+
+
 
         {/* 🔹 Form */}
         <div className="form-group">
