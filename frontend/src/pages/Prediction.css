@@ -1,0 +1,75 @@
+.prediction-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.prediction-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #1e3a5f;
+}
+
+.prediction-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  display: grid;
+  gap: 18px;
+}
+
+.prediction-input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.prediction-label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 15px;
+  color: #333;
+}
+
+.prediction-input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline-color: #1976d2;
+}
+
+.prediction-button {
+  margin-top: 10px;
+  padding: 14px;
+  background-color: #1976d2;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.prediction-result {
+  margin-top: 25px;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.prediction-success {
+  background-color: #e8f5e9;
+  border: 1px solid #c8e6c9;
+}
+
+.prediction-error {
+  background-color: #ffebee;
+  border: 1px solid #f44336;
+  color: #c62828;
+}

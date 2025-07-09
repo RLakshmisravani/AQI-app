@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.forecast-container {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #dfefff, #e9f5ec);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forecast-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.7s ease;
+}
+
+.forecast-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e3a5f;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.form-group select,
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+  border-color: #1976d2;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2);
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(to right, #1976d2, #0d47a1);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-submit:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(25, 118, 210, 0.4);
+}
+
+.forecast-results {
+  max-width: 900px;
+  margin-top: 50px;
+  animation: slideUp 0.5s ease-in;
+}
+
+.forecast-results h3 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.forecast-results h3 span {
+  color: #1976d2;
+}
+
+.forecast-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.forecast-card {
+  padding: 20px;
+  border-radius: 14px;
+  width: 230px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.forecast-card:hover {
+  transform: translateY(-6px);
+}
+
+.forecast-card h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.aqi-value {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.aqi-label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.error-msg {
+  margin-top: 30px;
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 14px 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .forecast-box {
+    padding: 30px 20px;
+  }
+
+  .forecast-card {
+    width: 100%;
+  }
+}
