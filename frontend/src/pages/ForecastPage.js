@@ -32,7 +32,7 @@ const ForecastPage = () => {
       setError("Please select both city and date.");
       return;
     }
-    fetch(`http://localhost:5000/forecast?city=${selectedCity}&date=${date}`)
+    fetch(`https://aqi-app-x8fq.onrender.com/forecast?city=${selectedCity}&date=${date}`)
       .then((res) => res.json())
       .then((data) => {
         if (data.error) setError(data.error);
