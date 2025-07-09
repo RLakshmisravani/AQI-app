@@ -4,6 +4,8 @@ import pandas as pd
 import joblib
 from auth import init_user_db, register_user, login_user
 from emailer import send_alerts_for_city, send_welcome_email
+from dotenv import load_dotenv
+load_dotenv()
 
 app = Flask(__name__)
 CORS(app)
@@ -185,4 +187,4 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()

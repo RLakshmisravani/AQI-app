@@ -1,5 +1,8 @@
 flask
+flask-cors
 pandas
 joblib
-xgboost
 scikit-learn
+xgboost
+python-dotenv
+numpy
