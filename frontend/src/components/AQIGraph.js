@@ -28,7 +28,7 @@ const AQIGraph = ({ selectedCity, setSelectedCity }) => {
 
   // 🔸 Load cities once
   useEffect(() => {
-    fetch("http://localhost:5000/cities")
+    fetch("https://aqi-app-x8fq.onrender.com/cities")
       .then((res) => res.json())
       .then((data) => {
         setCityOptions(data);
@@ -42,7 +42,7 @@ const AQIGraph = ({ selectedCity, setSelectedCity }) => {
   useEffect(() => {
     if (!selectedCity) return;
 
-    fetch(`http://localhost:5000/history?city=${selectedCity}`)
+    fetch(`https://aqi-app-x8fq.onrender.com/history?city=${selectedCity}`)
       .then((res) => res.json())
       .then((data) => {
         setAqiData(data);

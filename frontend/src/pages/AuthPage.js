@@ -24,8 +24,8 @@ const AuthPage = () => {
     setMessage("");
 
     const url = isLogin
-      ? "http://localhost:5000/auth/login"
-      : "http://localhost:5000/auth/register";
+      ? "https://aqi-app-x8fq.onrender.com/auth/login"
+      : "https://aqi-app-x8fq.onrender.com/auth/register";
 
     const payload = isLogin
       ? { email: form.email, password: form.password }

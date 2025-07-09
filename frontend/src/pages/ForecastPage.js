@@ -19,7 +19,7 @@ const ForecastPage = () => {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/cities")
+    fetch("https://aqi-app-x8fq.onrender.com/cities")
       .then((res) => res.json())
       .then(setCities)
       .catch(() => setError("Failed to load city list"));

@@ -24,7 +24,7 @@ const Prediction = () => {
     setError("");
     setResult(null);
     try {
-      const res = await fetch("http://localhost:5000/predict-from-weather", {
+      const res = await fetch("https://aqi-app-x8fq.onrender.com/predict-from-weather", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

@@ -16,7 +16,7 @@ const LatestAQICards = ({ onCityClick }) => {
 
   // 🔄 Fetch real-time AQI
   useEffect(() => {
-    fetch("http://localhost:5000/latest-aqi")
+    fetch("https://aqi-app-x8fq.onrender.com/latest-aqi")
       .then((res) => res.json())
       .then(setData);
   }, []);

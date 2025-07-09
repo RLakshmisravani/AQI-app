@@ -12,7 +12,7 @@ const Login = () => {
   const handleLogin = async () => {
     setMessage("");
     try {
-      const res = await fetch("http://localhost:5000/login", {
+      const res = await fetch("https://aqi-app-x8fq.onrender.com/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
