@@ -4,6 +4,7 @@ import pandas as pd
 import joblib
 from auth import init_user_db, register_user, login_user
 from emailer import send_alerts_for_city, send_welcome_email
+import os
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -187,4 +188,5 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run()
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
